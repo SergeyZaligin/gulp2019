@@ -8,7 +8,6 @@ const pngquant = require('imagemin-pngquant');
 const cssnano = require("gulp-cssnano");
 const plumber = require("gulp-plumber");
 
-
 gulp.task("scss", () => {
   return gulp
     .src("dev/scss/**/*.scss")
@@ -23,7 +22,6 @@ gulp.task("scss", () => {
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest("public/css"));
 });
-
 
 gulp.task("default", ["scss"], () => {
   gulp.watch("dev/scss/**/*.scss", ["scss"]);

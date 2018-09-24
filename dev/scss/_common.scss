@@ -2,3 +2,17 @@
 	box-sizing: border-box;
 	background-color: $bgColor;
 }
+
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+.wrapper{
+	min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+}
+		
